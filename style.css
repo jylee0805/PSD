@@ -51,17 +51,17 @@ body{
     line-height: 24px;
 }
 
-.socialMedia{
+.bar{
     padding: 0 400px 0 400px;
     background: #F6F6F8;
+    height: 30px;
 }
-.socialMedia ul{
+.bar ul{
     display: flex;  
-    align-items: center;
-    justify-content: end;
+    float: right;
 }
 
-.socialMedia li a{
+.bar li a{
     text-decoration: none;
     display: block;
     margin-right: 4px;
@@ -93,6 +93,9 @@ hr{
     line-height: 24px;
     padding: 2px 0px 2px 0px;
 }
+.clear{
+    clear: both;
+}
 .menu{
     padding: 0 400px 0 400px;
     display: flex;
@@ -111,8 +114,8 @@ hr{
 }
 
 .menu ul{
-    display: flex;  
-
+    display: flex; 
+    float: right;
 }
 .menu ul li a{
     display: block;
@@ -129,6 +132,7 @@ hr{
 }
 .header{
     background-image: url(../PSD/header_background.jpg);
+    background-repeat: no-repeat;
     padding: 125px 0 125px 0;
     margin-bottom: 60px;
 }
