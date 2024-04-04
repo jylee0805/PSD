@@ -1,0 +1,232 @@
+@import "reset";
+@import "varible";
+@import "module/buttons";
+body{
+    margin: 0 auto;
+    width: 1920px;
+    font-family:Microsoft JhengHei;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.bar{
+    padding: 0 400px 0 400px;
+    background: #F6F6F8;
+    height: 30px;
+    ul{
+        display: flex;  
+        float: right;
+    }
+
+    li {
+        a{
+            text-decoration: none;
+            display: block;
+            margin-right: 4px;
+            padding: 4px 0px 4px 20px;
+        }
+    }
+}
+.fb{
+    color:#4267B2 ;
+    background-image:url(../PSD/facebook_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    
+}
+.twitter{
+    color:#1DA1F2;
+    background-image: url(../PSD/twitter_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+hr{
+    height: 12PX;
+    width: 1PX;
+    border-top: none;
+    border-left: none;
+    background: #CCCCCC; 
+    margin: 10px;
+}
+.line{
+    line-height: 24px;
+    padding: 2px 0px 2px 0px;
+}
+.clear{
+    clear: both;
+}
+.menu{
+    padding: 0 400px 0 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        display: flex; 
+        float: right;
+        li{
+            a{
+                display: block;
+                padding: 26px 20px 22px 20px; 
+                color: $secondaryColor;
+                text-decoration: none;
+                font-weight: $font-bold;
+                border-bottom: 4px solid transparent;
+                &:hover{
+                    border-bottom: 4px solid $primaryColor;
+                    padding-bottom: -4px;
+                }
+            }
+        }
+    }
+}
+.logo{
+    background-image: url(../PSD/hexschool-logo.jpg);
+    width: 151px;
+    height: 36px;
+    text-indent:101% ;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    float: left;
+}
+.header{
+    background-image: url(../PSD/header_background.jpg);
+    background-repeat: no-repeat;
+    padding: 125px 0 125px 0;
+    margin-bottom: 60px;
+    h1{
+        background: rgba(255, 255, 255, 0.15);
+        padding: 27px 1026px 27px  498px;
+        line-height: 43.2px;
+        font-weight: $font-bold;
+        font-size: $font-l;
+    }
+}
+.course{
+    display: flex;
+    margin: 0 405px 60px 405px;
+    justify-content: space-around;
+    
+}
+.course-item{
+    width: 310px;
+    line-height: 1.5;
+    padding: 20px;
+    box-shadow:0px 2px 4px rgba(0,0,0,.16) ;
+    border-radius: 5px;
+    h2{
+        text-align: center;
+        font-weight: $font-bold;
+        font-size: $font-s;
+    }
+    p{
+        padding-top: 12px;
+        text-align: justify;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    ul{ 
+        list-style: disc;
+        list-style-position: inside;
+        li{
+            padding-left: 5px;
+        }
+    }
+}
+table{
+    margin: 0 auto;
+    width: 920px;
+    border-collapse:collapse;
+    border-spacing: 0;
+    margin-bottom: 60px;
+    caption{
+        font-size: $font-m;
+        font-weight: $font-bold;
+        line-height: 28.8px;
+        margin-bottom: 24px;
+    }
+    td,th{
+        border-top: 1px solid $borderColor;
+        border-bottom: 1px solid $borderColor;
+        text-align: left;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    th{
+        font-weight: $font-bold;
+    }
+}
+.highlight{
+    font-weight: $font-bold;
+    color:$primaryColor;
+}
+.form{
+    background: linear-gradient(#E4FFF8,#A2DDCE);
+    h2{
+        text-align: center;
+        padding-top: 36px;
+        font-size: $font-m;
+        line-height: 28.8px;
+        font-weight: $font-bold;
+    }
+}
+form{
+    margin: 36px 594px 36px 595px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    input{
+        margin-bottom: 16px;
+        margin-right: 30px;
+        height: 38px;
+        width: 350px;
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+    }
+}
+.data{
+    display: flex;
+    height: 270px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom:20px ; 
+    label{
+        line-height: 19.2px;
+        color:$secondaryColor ;
+        padding-bottom: 6px;
+    }
+    textarea{
+        height: 200px;
+        width: 350px;
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+        resize: none;
+    }
+}
+.btn{
+    width: 159px;
+    height: 38px;
+    margin-left:50px;
+    background: $secondaryColor;
+    border: 1px solid $secondaryColor;
+    color: white;
+    &:hover{
+        background: $hoverColor;
+        border: 1px solid $hoverColor;
+    }
+}
+.footer{
+    padding: 0px 405px 16px 400px; 
+    p{
+        margin-left: 850px; 
+        line-height: 24px;
+        span{
+            color:$primaryColor ;
+        }
+    }
+}
